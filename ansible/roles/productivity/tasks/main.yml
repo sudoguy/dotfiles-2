@@ -2,51 +2,15 @@
   - name: Ensure my productivity tools are installed
     homebrew_cask:
       name:
-        - 1password
-        - alfred
-        - bettertouchtool
-        - bluetoothconnector
-        - bartender
-        - choosy
-        - google-chrome
-        - gifox
-        - cleanmymac
+        - discord
+        - firefox
         - iina
-        - ilya-birman-typography-layout
-        - karabiner-elements
         - krisp
-        - loom
-        - notion
-        - permute
+        - pocket-casts
         - protonvpn
-        - soulver
         - slack
-        - sketch
         - skype
-        - transmission
+        - spectacle
+        - spotify
+        - telegram
         - zoomus
-        - yandex
-
-  - name: Ensure my streaming tools are installed
-    homebrew_cask:
-      name:
-        - audio-hijack
-        - fission
-        - loopback
-        - obs
-        - piezo
-        - pretzel
-        - soundsource
-
-  - name: Reduce macos noise
-    osx_defaults:
-      key: "{{ item.key }}"
-      domain: "{{ item.domain }}"
-      value: "{{ item.value }}"
-    loop:
-      - domain: com.apple.systempreferences
-        key: AttentionPrefBundleIDs
-        value: 0
-      - domain: com.apple.dock
-        key: no-bouncing
-        value: TRUE

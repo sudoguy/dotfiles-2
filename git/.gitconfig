@@ -1,0 +1,20 @@
+[user]
+	name = Evgeny Kemerov
+	email = eskemerov@gmail.com
+[core]
+	autocrlf = input
+	editor = /usr/bin/vim
+	pager = delta --dark
+    excludesfile = /Users/sudoguy/.gitignore_global
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[push]
+	followTags = true
+[pull]
+	rebase = false

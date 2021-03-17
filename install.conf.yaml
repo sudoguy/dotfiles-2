@@ -9,31 +9,16 @@
     - ~/.config
 
 - link:
-    ~/.config/fish/config.fish: fish/config.fish
-    ~/.config/fish/f213: fish/f213
-    ~/.config/omf: fish/omf
-    ~/.config/karabiner: karabiner
-    ~/.vimrc: .vimrc
-    ~/.vim: vimrc
-    ~/.screenrc: .screenrc
-    ~/.gitconfig: .gitconfig
-    ~/.isort.cfg: .isort.cfg
+    ~/.config/starship.toml: shell/starship.toml
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
     ~/.editorconfig: .editorconfig
-    ~/.config/flake8: flake8
-    ~/.cookiecutterrc: cookiecutterrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/bin
-  - [./install-brew-stuff.sh, Installing homebew and essential utils]
-  - rm -Rf ~/.local/share/omf/
-  - curl -L https://get.oh-my.fish > /tmp/omf_install
-  - chmod +x /tmp/omf_install
-  - fish -c "/tmp/omf_install --noninteractive"
-  - rm /tmp/omf_install
-  - fish -c omf update
+  - [./install-brew-stuff.sh, Installing homebrew and essential utils]
   - command: ./run-ansible.sh
     stdin: true
     stdout: true
     description: Poring software
-

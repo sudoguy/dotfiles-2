@@ -10,26 +10,32 @@
   - name: Ensure console utils are installed
     homebrew:
       name:
-        - ansible-lint
         - bat
         - bfg
         - exa
-        - circleci
         - doctl
+        - fd
         - git
         - gnupg
+        - go
+        - grep
         - jsonlint
+        - heroku
+        - htop
+        - httpie
         - hub
         - fzf
         - mosh
         - mtr
         - nmap
         - pinentry-mac
-        - pwgen
-        - sloccount
-        - siege
-        - telnet
+        - pipx
         - ripgrep
+        - siege
+        - starship
+        - stern
+        - telnet
+        - wget
         - yamllint
 
   - name: Ensure graphical utils are installed
@@ -37,9 +43,11 @@
       name:
         - docker
         - font-source-code-pro
-        - keybase
+        - font-fira-code
+        - font-hack-nerd-font
+        - insomnia
         - ngrok
-        - postico
+        - tableplus
         - visual-studio-code
 
   - name: Ensure python and node version managers are installed

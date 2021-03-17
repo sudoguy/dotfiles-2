@@ -1,5 +1,5 @@
 ---
-  - name: Install fish shell
+  - name: Install zsh shell
     homebrew:
-      name: fish
+      name: zsh
       state: present
