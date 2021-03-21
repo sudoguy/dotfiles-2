@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 if [[ -z "$VIRTUAL_ENV" ]]; then
@@ -47,7 +47,7 @@ antigen theme robbyrussell
 
 antigen apply
 
-alias my_upgrade="brew upgrade && brew upgrade --cask && pyenv update && pipx upgrade-all && omz update"
+alias my_upgrade="brew upgrade && brew upgrade --cask && pipx upgrade-all && omz update"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

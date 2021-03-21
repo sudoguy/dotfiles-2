@@ -5,7 +5,9 @@
 
   - name: Add required homebrew repos
     homebrew_tap:
-      name: homebrew/cask-fonts
+      name:
+        - homebrew/cask-fonts
+        - heroku/brew
 
   - name: Ensure console utils are installed
     homebrew:
@@ -41,7 +43,7 @@
   - name: Ensure graphical utils are installed
     homebrew_cask:
       name:
-        - docker
+       # - docker
         - font-source-code-pro
         - font-fira-code
         - font-hack-nerd-font

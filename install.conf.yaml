@@ -13,6 +13,10 @@
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.editorconfig: .editorconfig
+    ~/.zshrc: shell/.zshrc
+    ~/.zshenv: shell/.zshenv
+    ~/.zfunc: shell/.zfunc
+    ~/.zprofile: shell/.zprofile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
